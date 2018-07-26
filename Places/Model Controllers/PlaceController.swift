@@ -13,6 +13,7 @@ class PlaceController {
     func createPlace(withName name: String, latitude: Double, longitude: Double) {
         let place = Place(name: name, latitude: latitude, longitude: longitude)
         places.append(place)
+        print(places)
     }
     
     private(set) var places: [Place] = []
